@@ -4,7 +4,7 @@
 
 https://kubernetes.io/docs/tasks/debug-application-cluster/audit/
 
-Question: Enable auditing in this kubernetes cluster. Create a new policy file that will only log events based on the below specifications:
+Question: Enable auditing in this kubernetes cluster. Create a new audit policy file that will only log events based on the details:
 
 - Namespace: test
 - Level: metadata
