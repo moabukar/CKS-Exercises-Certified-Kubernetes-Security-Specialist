@@ -19,6 +19,7 @@ mkdir audit
       name: auditing
 
 ```
+
 #### 3 - Add auditing related configuration in kube-apiserver
 
 ```sh
