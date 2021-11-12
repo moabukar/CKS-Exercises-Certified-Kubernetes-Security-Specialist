@@ -24,11 +24,6 @@ Make changes to the /var/lib/kubelet/config.yaml
 
 ```sh
 
-vi /var/lib/kubelet/config.yaml
 
-change "authorization mode"
-
-authorization:
-  mode: Webhook
 
 ```
