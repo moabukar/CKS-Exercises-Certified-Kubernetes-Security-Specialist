@@ -1,10 +1,11 @@
-## Question - ImagePolicyWebhook
+### Question - ImagePolicyWebhook
 
 ### K8s Docs
 
 [Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
 
 Create the PSP with the following conditions:
+
 - PSP name : pod-psp
 - Not allow privleged pods
 - Allow volumes to mount on pod: secret, configMap
@@ -14,7 +15,7 @@ Create the PSP with the following conditions:
 
 ```sh
 
-  - --enable-admission-plugins=NodeRestriction,PodSecurityPolicy
+  --enable-admission-plugins=NodeRestriction,PodSecurityPolicy
 
 ```
 
@@ -22,7 +23,7 @@ Create the PSP with the following conditions:
 
 ```sh
 
-vi psp.yaml
+vi /root/psp.yaml
 
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
@@ -42,7 +43,7 @@ spec:
   - configMap
   - secret
 
-kubectl apply -f psp.yaml
+kubectl apply -f /root/psp.yaml
 
 ```
 
