@@ -1,6 +1,6 @@
 ### Question - AppArmor
 
-A pod has been created in the spectacle namespace. However, there are a couple of issues with it:
+A pod has been created in the "spectacle" namespace. However, there are a couple of issues with it:
 - The pods has been created with privileged permissions
 - it allows read access 
 
@@ -18,6 +18,8 @@ apparmor_parser -q /etc/apparmor.d/database
 #### 2 - Create a pod using the AppArmor profile backend
 
 ```sh
+
+vi /root/app-armor-pod.yaml
 
 apiVersion: v1
 kind: Pod
@@ -42,5 +44,6 @@ spec:
       path: /data/pages
       type: Directory
 
-```
+kubectl apply -f /root/app-armor-pod.yaml
 
+```
