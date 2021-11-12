@@ -1,4 +1,3 @@
-# Cluster Setup
 
 - Secure a cluster using a Network Policy
   <details>
@@ -27,9 +26,3 @@
         port: 80
   ```
   </details>
-
-- Using CIS benchmark to review security configurations
-  <details>
-
-  ```
-  
