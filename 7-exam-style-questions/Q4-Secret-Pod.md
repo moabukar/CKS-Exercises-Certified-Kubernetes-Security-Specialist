@@ -1,11 +1,11 @@
 ### Question - Secret mounted on pod (volume)
 
-Create a secret named secret1 in the seminar namespace using details: 
+Create a secret named "secret1" in the "seminar" namespace using details: 
 
 user: admin
 pass : P455W0RD
 
-Create a pod named “secretpod” in the namespace seminar using the image nginx and mount the secret as a volume with readOnly option.
+Create a pod named “secretpod” in the namespace "seminar" using the image nginx and mount the secret as a volume with "readOnly" option.
 
 #### 1 - Create namespace
 
@@ -27,6 +27,8 @@ kubectl -n seminar create secret generic secret1 --from-literal=user=admin --fro
 
 ```sh
 
+vi /root/secret-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -44,5 +46,7 @@ spec:
   - name: vol1
     secret:
       secretName: secret1
+
+kubectl apply -f /root/secret-pod.yaml
 
 ```
