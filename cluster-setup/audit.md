@@ -9,7 +9,7 @@
 
 #### Step 2 - Create Audit Policy File:
 ```sh
-nano /root/certs/log.yaml
+vi /root/certs/log.yaml
 ```
 ```sh
 apiVersion: audit.k8s.io/v1
