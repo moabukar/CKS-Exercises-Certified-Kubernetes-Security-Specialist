@@ -61,7 +61,7 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 - Audit logs to monitor access
 
 
-## ["Exam-style" questions](7-"exam-style" - questions/)
+## [Exam-style questions](7-"exam-style" - questions/)
 
 - We have added some practice questions for you guys here
 - Keep in mind these are not an exact copy of exam questions rather they are guidance for you to follow based on our K8s learning and experiences.
