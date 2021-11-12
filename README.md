@@ -34,7 +34,7 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 ## [System Hardening (15%)](3-system-hardening/)
 
 - Minimising footprint of host OS to reduce attack surface
-- Minimising IAM roles. Principle of least privilege — Authentication and Authorisation
+- Minimising IAM roles: Principle of least privilege — Authentication and Authorisation
 - Minimise external access to the network — denying external access to outside the cluster
 - Using kernel hardening tools — such as seccomp and AppArmor correctly
 
