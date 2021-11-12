@@ -1,8 +1,7 @@
 ### Question - Audit
-
 ### K8s Docs
 
-https://kubernetes.io/docs/tasks/debug-application-cluster/audit/
+[Audit](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
 
 Question: Enable auditing in this kubernetes cluster. Create a new audit policy file that will only log events based on the details:
 
@@ -13,7 +12,6 @@ Question: Enable auditing in this kubernetes cluster. Create a new audit policy 
 - Log Path: /var/log/test-audit.log
 - Audit file location: /etc/kubernetes/test-audit.yaml
 - Maximum days to keep the logs: 20
-
 
 #### 1 - Create the audit file
 
@@ -68,6 +66,3 @@ volumeMounts:
 - After exiting the kube-api server manifest, give it a moment for the server to restart and for changes to take effect.
 
 ```
-
-
-

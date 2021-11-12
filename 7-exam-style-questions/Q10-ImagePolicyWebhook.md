@@ -1,8 +1,7 @@
-### Question - ImgagePolicyWebhook
-
+## Question - ImagePolicyWebhook
 ### K8s Docs
 
-https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
+[Kube-Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 
 We are required to deploy an ImagePolicyWebhook admission controller to secure the deployments that are made on our cluster by ensuring the below:
 
@@ -10,8 +9,7 @@ We are required to deploy an ImagePolicyWebhook admission controller to secure t
 - Ensure that the policy is set to implicit deny.
 - Ensure the plugin is on the kube-api server
 
-
-#### 1 - Update and fix the issue on the admission config 
+#### 1 - Update and fix the issue on the admission config
 
 ```sh
 
