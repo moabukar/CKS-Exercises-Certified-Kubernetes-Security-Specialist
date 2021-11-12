@@ -6,6 +6,39 @@ Create a new role named k8s-seminar in the namespace seminar which only allows c
 
 Create a new rolebinding name k8s-seminar-bind binding to the newly created role to the service account created previously named seminar-sa.
 
+### Option 1 - Imperative
+
+#### 1 - Create a namespace
+
+```sh
+
+kubectl create ns seminar
+
+```
+
+#### 2 - Create service account
+```sh
+
+kubectl -n seminar create sa seminar-sa
+
+```
+
+#### 3 - Create role
+
+```sh
+
+kubectl -n seminar create role k8s-seminar --verb=create,update --resource=pods,deployments
+
+```
+
+#### 4 - Create rolebinding
+```sh
+
+kubectl -n seminar create rolebinding k8s-seminar-bind --role=k8s-seminar --serviceaccount=seminar:seminar-sa
+
+```
+
+### Option 2 - Declarative
 
 #### 1 - Create a namespace
 
@@ -24,11 +57,32 @@ kubectl -n seminar create sa seminar-sa
 
 #### 3 - Create role
 ```sh
-kubectl -n seminar create role k8s-seminar --verb=create,update --resource=pods,deployments
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: seminar
+  name: k8s-seminar
+rules:
+- apiGroups: [""]
+  resources: ["pods","deployments"]
+  verbs: ["create","update"]
+
 ```
 
 #### 4 - Create rolebinding
+
 ```sh
-kubectl -n seminar create rolebinding k8s-seminar-bind --role=k8s-seminar --serviceaccount=seminar:seminar-sa
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: k8s-seminar-pod
+  namespace: seminar
+subjects:
+roleRef:
+  kind: Role
+  name: k8s-seminar
+  apiGroup: rbac.authorization.k8s.io
 
 ```
