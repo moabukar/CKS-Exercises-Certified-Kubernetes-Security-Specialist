@@ -67,7 +67,12 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 - Keep in mind these are not an exact copy of exam questions rather they are guidance for you to follow based on our K8s learning and experiences.
 
 ## More useful resources and materials
-### Slack channels
+
+#### Further reading (articles & books)
+
+1. [Where to begin with the CKS exam?](https://moabukar.medium.com/where-to-begin-with-the-cks-exam-5cf0dcc86f76)
+
+#### Slack channels
 
 1. [Kubernetes Community - #cks-exam-prep](https://kubernetes.slack.com)
 
