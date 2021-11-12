@@ -2,8 +2,8 @@
 
 ### Docker and container sec docs (can't be used in exam)
 
-[Google Docker best practices](https://cloud.google.com/blog/products/containers-kubernetes/7-best-practices-for-building-containers)
-[Docker](https://learnk8s.io/blog/smaller-docker-images)
+- [Google Docker best practices](https://cloud.google.com/blog/products/containers-kubernetes/7-best-practices-for-building-containers)
+- [Docker](https://learnk8s.io/blog/smaller-docker-images)
 
 Given a Dockerfile, analyse it and update it based on security best practices.
 
