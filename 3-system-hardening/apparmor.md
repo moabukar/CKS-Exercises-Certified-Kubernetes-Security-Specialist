@@ -37,6 +37,8 @@ cd /root/apparmor1
 
 vi pod-app-armor.yaml
 
+```
+
 ```sh
 apiVersion: v1
 kind: Pod
