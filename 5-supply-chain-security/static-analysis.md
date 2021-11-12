@@ -54,8 +54,8 @@ apt install python3-pip
 pip3 install checkov
 
 ```
-#### Test manifest file
 
+#### Test manifest file
 
 ```sh
 
