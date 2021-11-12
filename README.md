@@ -60,7 +60,6 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 
 1. [Mumshad's KodeKloud "Certified Kubernetes Security Specialist" course](https://kodekloud.com/p/certified-kubernetes-security-specialist-cks)
 1. [Killer.sh CKS practice exam](https://killer.sh/cks)
-1. 
 
 #### Other useful CKS repos
 
