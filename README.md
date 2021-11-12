@@ -65,5 +65,5 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 #### Other useful CKS repos
 
 1. [Walid Shaari's CKS repo](https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist)
-1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist)
+1. [Abdennour's CKS repo](https://github.com/abdennour/certified-kubernetes-security-specialist)
 1. [Kim's CKS Challenge series](https://github.com/killer-sh/cks-challenge-series)
