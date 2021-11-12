@@ -49,3 +49,21 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 - Performing deep analytical investigation and identification of bad actors within environment — [Sysdig](https://sysdig.com/)
 - Ensuring immutability of containers at runtime
 - Audit logs to monitor access
+
+
+## More useful resources and materials
+### Slack channels
+
+1. [Kubernetes Community - #cks-exam-prep](https://kubernetes.slack.com)
+
+#### K8s and Container Security resources
+
+1. [Mumshad's KodeKloud "Certified Kubernetes Security Specialist" course](https://kodekloud.com/p/certified-kubernetes-security-specialist-cks)
+1. [Killer.sh CKS practice exam](https://killer.sh/cks)
+1. 
+
+#### Other useful CKS repos
+
+1. [Walid Shaari's CKS repo](https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist)
+1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist)
+1. [Kim's CKS Challenge series](https://github.com/killer-sh/cks-challenge-series)
