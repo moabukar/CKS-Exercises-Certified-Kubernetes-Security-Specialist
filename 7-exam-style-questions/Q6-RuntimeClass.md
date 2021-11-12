@@ -4,9 +4,9 @@
 
 https://kubernetes.io/docs/concepts/containers/runtime-class/
 
-Create a RuntimeClass named gVisor using the handler runsc
+Create a RuntimeClass named "gVisor" using the handler "runsc"
 
-Create a pod that uses the nginx image in the namespace test which utilises the runtime class gVisor
+Create a pod named "gVisor-pod" that uses the nginx image in the namespace "test" which utilises the runtime class "gVisor"
 
 #### 1 - Install RuntimeClass for gVisor
 
@@ -50,7 +50,6 @@ kubectl run nginx-test --image=nginx
 
 #### Verifying dmesg output
 
-
 ##### RuntimeClass pod
 
 ```sh
@@ -58,6 +57,7 @@ kubectl run nginx-test --image=nginx
 kubectl exec -it gVisor-pod -- bash dmesg
 
 ```
+
 ##### Test pod
 
 ```sh
