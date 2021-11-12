@@ -1,12 +1,19 @@
-### Question - Kube-bench (1)
+### Question - Audit
 
 ### K8s Docs
 
 https://kubernetes.io/docs/tasks/debug-application-cluster/audit/
 
-You have just read the kube-bench assessment report. Fix the tests that have FAIL status for the worker node configuration.
+Question: Enable auditing in this kubernetes cluster. Create a new policy file that will only log events based on the below specifications:
 
-The kube-bench report gives issues such as (or close to):
+Namespace: test
+Level: metadata
+Operations: delete
+Resources: secrets
+Log Path: /var/log/test-secrets.log
+Audit file location: /etc/kubernetes/test-audit.yaml
+Maximum days to keep the logs: 20
+
 
 - "authoirsation mode is set as Always allowed"
 - "Kernel defaults are not protected"
