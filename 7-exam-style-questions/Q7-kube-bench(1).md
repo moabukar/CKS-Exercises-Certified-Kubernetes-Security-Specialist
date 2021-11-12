@@ -2,12 +2,11 @@
 
 ### K8s Docs
 
-
 You have just read the kube-bench assessment report. Fix the tests that have FAIL status for the worker node configuration.
 
 The kube-bench report gives issues such as (or close to):
 
-- "authoirsation mode is set as Always allowed"
+- "authorisation mode is set as Always allowed"
 - "Kernel defaults are not protected"
 
 Make changes to the /var/lib/kubelet/config.yaml
