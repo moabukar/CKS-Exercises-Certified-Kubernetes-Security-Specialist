@@ -5,6 +5,16 @@
 
 A curated collections of exercises to help prepare for the Certified Kubernetes Security Specialist. The exercises have been segregated into their respective domains as per the [CNCF curriculum](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) for CKS.
 
+
+## Shortcuts and things to keep in mind
+
+- k = kubectl ()
+- ns = namespace
+- sa = service account
+- po = pod
+- netpol = network policy
+- psp = pod security policy
+
 ## [Cluster setup (10%)](cluster-setup/)
 
 - Using network policies to restrict cluster level access
