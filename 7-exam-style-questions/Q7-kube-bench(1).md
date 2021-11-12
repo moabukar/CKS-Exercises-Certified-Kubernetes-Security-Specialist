@@ -2,7 +2,6 @@
 
 ### K8s Docs
 
-https://kubernetes.io/docs/concepts/containers/runtime-class/
 
 You have just read the kube-bench assessment report. Fix the tests that have FAIL status for the worker node configuration.
 
