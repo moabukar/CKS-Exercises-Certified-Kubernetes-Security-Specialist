@@ -1,6 +1,6 @@
 ### K8s Documentation
 
-[Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
+[Admission Controllers K8s docs](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 
 Create directory for storing the configs:
 
@@ -47,7 +47,7 @@ clusters:
 - name: imagepolicy-webhook
   cluster:
     certificate-authority: /etc/kubernetes/pki/ca.crt   # CA for verifying the remote service.
-    server: https://images.test.com/policy # URL of remote service to query. Must use 'https'.
+    server: https://images.demo.com/policy # URL of remote service to query. Must use 'https'.
 contexts:
 - context:
     cluster: imagepolicy-webhook
