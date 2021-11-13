@@ -1,6 +1,6 @@
 ### Question - Secret mounted on pod (volume)
 
-Create a secret named "secret1" in the "seminar" namespace using details: 
+Create a secret named "secret1" in the "seminar" namespace using details:
 
 user: admin
 pass : P455W0RD
@@ -34,20 +34,20 @@ vi ~/secret-pod.yaml
 apiVersion: v1
 kind: Pod
 metadata:
-  name: secretpod
-  namespace: seminar
+  name: secretpod ## pod name
+  namespace: seminar ## correct namespace
 spec:
   containers:
   - name: secretpod
     image: nginx
     volumeMounts:
-    - name: vol1
+    - name: vol1 
       mountPath: /etc/foo
-      readOnly: true
+      readOnly: true ## select this option as true
   volumes:
   - name: vol1
     secret:
-      secretName: secret1
+      secretName: secret1 ## use secret here
 
 kubectl apply -f ~/secret-pod.yaml
 
