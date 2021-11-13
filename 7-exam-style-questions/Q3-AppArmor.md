@@ -1,10 +1,11 @@
 ### Question - AppArmor
 
 A pod has been created in the "spectacle" namespace. However, there are a couple of issues with it:
-- The pods has been created with privileged permissions
-- it allows read access 
 
-- Use the AppArmor profile created at /etc/apparmor.d/database.
+- The pods has been created with privileged permissions
+- it allows read access
+
+- Use the AppArmor profile created at /etc/apparmor.d/spectacleapp
 - create a service account in the spectacle namespace called "test-sa" and use this service account on the pod
 
 ### Solution
@@ -13,8 +14,7 @@ A pod has been created in the "spectacle" namespace. However, there are a couple
 
 ```sh
 
-apparmor_parser -q /etc/apparmor.d/database
-
+apparmor_parser -q /etc/apparmor.d/spectacleapp
 ```
 
 #### 2 - Create a pod using the AppArmor profile backend
@@ -27,7 +27,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   annotations:
-    container.apparmor.security.beta.kubernetes.io/nginx: localhost/database #Apply profile 'restricted-fronend' on 'nginx' container
+    container.apparmor.security.beta.kubernetes.io/nginx: localhost/spectacleapp #Apply profile 'restricted-fronend' on 'nginx' container
   labels:
     run: nginx
   name: apparmor-pod
