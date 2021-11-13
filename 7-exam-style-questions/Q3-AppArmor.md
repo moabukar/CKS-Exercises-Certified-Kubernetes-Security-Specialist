@@ -21,7 +21,7 @@ apparmor_parser -q /etc/apparmor.d/database
 
 ```sh
 
-vi /root/app-armor-pod.yaml
+vi ~/app-armor-pod.yaml
 
 apiVersion: v1
 kind: Pod
@@ -46,6 +46,6 @@ spec:
       path: /data/pages
       type: Directory
 
-kubectl apply -f /root/app-armor-pod.yaml
+kubectl apply -f ~/app-armor-pod.yaml
 
 ```
