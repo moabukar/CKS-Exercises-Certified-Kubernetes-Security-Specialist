@@ -18,7 +18,9 @@ Find the falco rule that produces this alert and change the output to include th
 Copy the rule to /etc/falco/falco_rules.local.yaml
 
 ```
+
 ```sh
+
 - rule: Terminal shell in container
   desc: A shell was used as the entrypoint/exec point into a container with an attached terminal.
   condition: >
@@ -30,11 +32,12 @@ Copy the rule to /etc/falco/falco_rules.local.yaml
     %evt.time.s,%user.uid,%container.id,%container.image.repository
   priority: ALERT
   tags: [container, shell, mitre_execution]
+  Save the /etc/falco/falco_rules.local.yaml file.
+  
 ```
 
 ```sh
-Once you've applied it, apply:
 
-systemctl restart falco.service to override the current rule
+Then run ```console systemctl restart falco.service ``` to override the current rule
 
 ```
