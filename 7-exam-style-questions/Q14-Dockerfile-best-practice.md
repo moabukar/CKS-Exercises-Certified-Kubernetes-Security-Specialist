@@ -1,6 +1,6 @@
 ### Question - Dockerfile best practice
 
-### Docker and container sec docs (can't be used in exam)
+### Docker and container security docs (can't be used in exam)
 
 - [Docker best practices by Google](https://cloud.google.com/blog/products/containers-kubernetes/7-best-practices-for-building-containers)
 - [Docker tips & tricks for smaller image size by learnk8s.io](https://learnk8s.io/blog/smaller-docker-images)
