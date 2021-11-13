@@ -2,7 +2,7 @@
 
 ```sh
 
-nano netpol.yaml
+vi netpol.yaml
 
 ```
 

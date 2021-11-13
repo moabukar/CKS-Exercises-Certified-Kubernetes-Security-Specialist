@@ -25,7 +25,7 @@ aa-status
 
 ```
 
-#### Sample YAML File based on Host PID
+#### Create a demo YAML based on Host
 
 ```sh
 
