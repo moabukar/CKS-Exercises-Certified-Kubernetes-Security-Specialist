@@ -1,8 +1,11 @@
 ### Question - Trivy
 
-A number of pods in the "spectacle" namespace have been created. Using the trivy tools, identify and delete the pods with the least number of CRITICAL vulnerabilities.
+There are a number of pods running in the "spectacle" namespace. Identify and delete the pods which have CRITICAL vulnerabilities.
 
-#### 1 - get all images of pods running in the spectacle namepsace
+### Solution
+
+
+#### 1 - get all images of pods running in the 'spectacle' namepsace
 
 ```sh
 
@@ -10,22 +13,22 @@ kubectl -n spectacle get pods -o yaml | grep -E "image"
 
 ```
 
-#### 2 - scan each image using "trivy image NAME"
+#### 2 - scan each image using "trivy image <NAME>"
 
 ```sh
 
 trivy image --severity CRITICAL nginx:1.16
 
-If the image has any CRITICAL vulnerabilities, delete the pod associated with that image.
-
 ```
 
+Run the above command for all the images found in step 1. If the images have CRITICAL vulnerabilities, delete the pod associated with that image.
+  
 #### 3 - Delete the pods
 
 ```sh
 
 kubectl -n spectacle delete pod <PODNAME>
 
-Do the above procedure as many times as required to delete the pod 
-
 ```
+
+Do the above procedure as many times as required to delete all pods with CRITICAL vulnerabilities.  
