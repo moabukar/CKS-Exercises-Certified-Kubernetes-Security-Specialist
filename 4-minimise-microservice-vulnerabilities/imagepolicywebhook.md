@@ -1,6 +1,6 @@
-### K8s Documentation:
+### K8s Documentation
 
-https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
+[Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 
 Create directory for storing the configs:
 
