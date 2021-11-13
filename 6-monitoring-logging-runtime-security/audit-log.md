@@ -1,4 +1,4 @@
-#### Create a directory for storing the audit logs and audit policy
+#### Create a directory for storing the audit logs and audit policy 
 
 ```sh
 
@@ -6,6 +6,7 @@ cd /etc/kubernetes/
 mkdir audit
 
 ```
+
 #### 2 - Mount the directory as HostPath Volumes in kube-apiserver
 
 ```sh
