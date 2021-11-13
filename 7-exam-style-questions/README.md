@@ -1,6 +1,6 @@
 ## Exam-style question list
 
-- Note : These "exam-style" questions are not exactly the same as exams or don't expec them to be the case. They are only to guide you on the right track and give an idea
+- Note : These "exam-style" questions are not exactly like the real exam, nor are they exam dumps or don't expect them to be the case. A small team of us have come together with the support of K8s official docs and compiled questions based on these. Please do submit a PR or an issue if a question has a wrong solution or you would like to add questions.
 
 - [Q1 - Trivy](Q1-Trivy.md)
 
