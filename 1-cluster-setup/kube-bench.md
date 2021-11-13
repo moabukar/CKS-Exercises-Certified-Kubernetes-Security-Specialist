@@ -2,13 +2,13 @@
 
 ```sh
 
-curl -L https://github.com/aquasecurity/kube-bench/releases/download/v0.4.0/kube-bench_0.4.0_linux_amd64.tar.gz -o kube-bench_0.4.0_linux_amd64.tar.gz
+curl -L https://github.com/aquasecurity/kube-bench/releases/download/v0.6.5/kube-bench_0.6.5_linux_amd64.tar.gz -o kube-bench_0.6.5_linux_amd64.tar.gz
 
-tar -xvf kube-bench_0.4.0_linux_amd64.tar.gz
+tar -xvf kube-bench_0.6.5_linux_amd64.tar.gz
 
 ```
 
-The kube-bench version used here is v0.4.0 
+The kube-bench version used here is v0.6.5
 Make sure to change the version depending on your needs.
 
 #### 2 - Running a kube-bench test
@@ -18,6 +18,7 @@ Make sure to change the version depending on your needs.
 ./kube-bench --config-dir `pwd`/cfg --config `pwd`/cfg/config.yaml
 
 ```
+
 #### 3 - check results and fix any failiures
 
 kube-bench will analyse 5 main configurations and policies as listed below:
