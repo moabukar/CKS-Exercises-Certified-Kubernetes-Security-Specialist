@@ -6,4 +6,6 @@
 
 - [Installing Falco](falco-installation.md)
 
+- [Immutability](immutability.md)
+
 - [Sysdig](sysdig.md)
