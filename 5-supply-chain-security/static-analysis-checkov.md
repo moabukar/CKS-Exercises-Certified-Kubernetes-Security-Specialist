@@ -1,10 +1,10 @@
-## Static Analysis
+## Static Analysis 
 
 ### Option 2  - checkov
 
-#### Documentation:
+#### Documentation
 
-https://github.com/bridgecrewio/checkov
+<https://github.com/bridgecrewio/checkov>
 
 #### Installation
 

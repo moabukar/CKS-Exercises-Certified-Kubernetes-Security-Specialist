@@ -1,13 +1,14 @@
-## Static Analysis
+## Static Analysis  
 
 ### Option 1 - kubesec
+
 #### Documentation
 
-https://github.com/controlplaneio/kubesec
+<https://github.com/controlplaneio/kubesec>
 
 #### Installation
 
-https://github.com/controlplaneio/kubesec/releases
+<https://github.com/controlplaneio/kubesec/releases>
 
 #### Test manifest file
 
