@@ -1,4 +1,4 @@
-### Question - AppArmor
+### Question - AppArmor 
 
 A pod has been created in the "spectacle" namespace. However, there are a couple of issues with it:
 
@@ -9,6 +9,8 @@ A pod has been created in the "spectacle" namespace. However, there are a couple
 - create a service account in the spectacle namespace called "test-sa" and use this service account on the pod
 
 ### Solution
+
+- [AppArmor K8s docs](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
 
 #### 1 - Load the AppArmor profile
 

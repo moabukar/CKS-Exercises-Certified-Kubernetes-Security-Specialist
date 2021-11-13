@@ -4,6 +4,7 @@ There are a number of pods running in the "spectacle" namespace. Identify and de
 
 ### Solution
 
+- [Trivy docs](https://github.com/aquasecurity/trivy)
 
 #### 1 - get all images of pods running in the 'spectacle' namepsace
 

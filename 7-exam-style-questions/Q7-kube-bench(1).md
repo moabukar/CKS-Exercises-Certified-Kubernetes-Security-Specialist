@@ -1,6 +1,4 @@
-### Question - Kube-bench (1)
-
-### K8s Docs
+### Question - Kube-bench (1) 
 
 You have just read the kube-bench assessment report. Fix the tests that have FAIL status for the worker node configuration.
 
@@ -12,6 +10,8 @@ The kube-bench report gives issues such as (or close to):
 Make changes to the /var/lib/kubelet/config.yaml
 
 ### Solution
+
+- [Kube-bench GitHub](https://github.com/aquasecurity/kube-bench)
 
 #### 1 - Update the kubelet config
 

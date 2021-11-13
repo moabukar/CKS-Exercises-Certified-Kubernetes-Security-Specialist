@@ -1,8 +1,4 @@
-### Question - ImagePolicyWebhook
-
-### K8s Docs
-
-[Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
+### Question - PSP
 
 Create a Pod Security Policy with the following conditions:
 
@@ -13,13 +9,15 @@ Create a Pod Security Policy with the following conditions:
 
 ### Solution
 
+- [PSP K8s docs](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
+
 #### 1 - Enable PSP in kube-api server
 
 Edit the /etc/kubernetes/manifests/kube-api-server.yaml file and add the below config.
 
 ```sh
 
-  --enable-admission-plugins=NodeRestriction,PodSecurityPolicy
+  --enable-admission-plugins=NodeRestriction,PodSecurityPolicy ## add in "PodSecurityPolicy"
 
 ```
 
@@ -34,7 +32,7 @@ kind: PodSecurityPolicy
 metadata:
   name: pod-psp
 spec:
-  privileged: false
+  privileged: false ## ensure this is set to false
   seLinux:
     rule: RunAsAny
   runAsUser:
@@ -43,7 +41,7 @@ spec:
     rule: RunAsAny
   fsGroup:
     rule: RunAsAny
-  volumes:
+  volumes:  ## apply the correct volumes as specified in the question
   - configMap
   - secret
 
@@ -67,7 +65,7 @@ spec:
       image: ubuntu
       command: ["sleep" , "3600"]
     securityContext:
-      privileged: False
+      privileged: False ## non-privileged
       runAsUser: 0
     volumes:
     - name: data-volume

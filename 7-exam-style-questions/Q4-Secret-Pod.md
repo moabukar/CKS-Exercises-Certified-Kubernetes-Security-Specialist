@@ -9,6 +9,8 @@ Create a pod named “secretpod” in the namespace "seminar" using the image ng
 
 ### Solution
 
+- [Secret K8s docs](https://kubernetes.io/docs/concepts/configuration/secret/)
+
 #### 1 - Create namespace
 
 ```sh
@@ -47,7 +49,7 @@ spec:
   volumes:
   - name: vol1
     secret:
-      secretName: secret1 ## use secret here
+      secretName: secret1 ## use created secret here
 
 kubectl apply -f ~/secret-pod.yaml
 

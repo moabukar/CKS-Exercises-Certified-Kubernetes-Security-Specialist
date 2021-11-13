@@ -1,14 +1,12 @@
 ### Question - RuntimeClass
 
-### K8s Docs
-
-https://kubernetes.io/docs/concepts/containers/runtime-class/
-
 Create a RuntimeClass named "gVisor" using the handler "runsc"
 
 Create a pod named "gVisor-pod" that uses the nginx image in the namespace "test" which utilises the runtime class "gVisor"
 
 ### Solution
+
+- [RuntimeClass K8s docs](https://kubernetes.io/docs/concepts/containers/runtime-class/)
 
 #### 1 - Install RuntimeClass for gVisor
 
@@ -37,7 +35,7 @@ metadata:
   name: gvisor-pod
   namespace: test
 spec:
-  runtimeClassName: gvisor
+  runtimeClassName: gvisor ## use created runtimeclass here
   containers:
   - image: nginx
     name: gVisor-pod

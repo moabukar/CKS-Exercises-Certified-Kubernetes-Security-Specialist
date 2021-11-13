@@ -1,8 +1,4 @@
-### Question - ImagePolicyWebhook
-
-### K8s Docs
-
-[Kube-Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
+### Question - ImagePolicyWebhook 
 
 We are required to deploy an ImagePolicyWebhook admission controller to secure the deployments that are made on our cluster by ensuring the below:
 
@@ -11,6 +7,8 @@ We are required to deploy an ImagePolicyWebhook admission controller to secure t
 - Ensure the plugin is on the kube-api server
 
 ### Solution
+
+- [Kube-Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 
 #### 1 - Update and fix the issue on the admission config
 
@@ -22,11 +20,11 @@ plugins:
 - name: ImagePolicyWebhook
   configuration:
     imagePolicy:
-      kubeConfigFile: /etc/kubernetes/pki/admission_kube_config.yaml
+      kubeConfigFile: /etc/kubernetes/pki/admission_kube_config.yaml ## ensure you apply the correct path
       allowTTL: 50
       denyTTL: 50
       retryBackoff: 500
-      defaultAllow: false
+      defaultAllow: false ## ensure this is set to false
 
 ```
 
@@ -34,9 +32,9 @@ plugins:
 
 ```sh
 
-- --enable-admission-plugins=NodeRestriction,ImagePolicyWebhook
-- --admission-control-config-file=/etc/kubernetes/pki/admission_configuration.yaml
+- --enable-admission-plugins=NodeRestriction,ImagePolicyWebhook ## add ImagePolicyWebhook here
+- --admission-control-config-file=/etc/kubernetes/pki/admission_configuration.yaml ## ensure correct config file path is used
 
-The API server will automatically restart and pickup the configuration.
+Once you leave the vim editor and save, the API server will automatically restart and pick up the configuration.
 
 ```
