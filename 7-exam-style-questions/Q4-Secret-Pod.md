@@ -29,7 +29,7 @@ kubectl -n seminar create secret generic secret1 --from-literal=user=admin --fro
 
 ```sh
 
-vi /root/secret-pod.yaml
+vi ~/secret-pod.yaml
 
 apiVersion: v1
 kind: Pod
@@ -49,6 +49,6 @@ spec:
     secret:
       secretName: secret1
 
-kubectl apply -f /root/secret-pod.yaml
+kubectl apply -f ~/secret-pod.yaml
 
 ```

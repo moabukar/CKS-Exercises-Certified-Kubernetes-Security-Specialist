@@ -27,6 +27,8 @@ handler: runsc  # The name of the corresponding CRI configuration
 
 ```sh
 
+vi ~/gVisor-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -39,6 +41,9 @@ spec:
   containers:
   - image: nginx
     name: gVisor-pod
+
+
+kubectl apply -f ~/gVisor-pod.yaml
 
 ```
 
