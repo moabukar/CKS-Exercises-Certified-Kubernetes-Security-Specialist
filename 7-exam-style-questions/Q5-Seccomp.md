@@ -8,7 +8,7 @@ Create a new pod called "nginx-auditing" in the "alpha" namespace using the ngin
 
 ```sh
 
-cp /root/auditing.json /var/lib/kubelet/seccomp/profiles
+cp ~/auditing.json /var/lib/kubelet/seccomp/profiles
 
 ```
 
@@ -16,7 +16,7 @@ cp /root/auditing.json /var/lib/kubelet/seccomp/profiles
 
 ```sh
 
-vi /root/seccomp-pod.yaml
+vi ~/seccomp-pod.yaml
 
 apiVersion: v1
 kind: Pod
@@ -39,6 +39,6 @@ spec:
 
 ```sh
 
-kubectl apply -f /root/seccomp-pod.yaml
+kubectl apply -f ~/seccomp-pod.yaml
 
 ```

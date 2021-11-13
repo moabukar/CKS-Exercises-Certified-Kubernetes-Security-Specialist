@@ -19,7 +19,7 @@ Only allow pods to connect to the pod "nginx-pod":
 
 kubectl get ns hello --show-labels >>> Namespace hello has label "ns: test"
 
-vi /root/netpol.yaml
+vi ~/netpol.yaml
 
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
@@ -44,6 +44,6 @@ spec:
     - protocol: TCP
       port: 6379
 
-kubectl apply -f /root/netpol.yaml
+kubectl apply -f ~/netpol.yaml
 
 ```

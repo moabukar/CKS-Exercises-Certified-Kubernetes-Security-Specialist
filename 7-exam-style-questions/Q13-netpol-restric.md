@@ -12,6 +12,8 @@ Create a network policy named all-deny and it should deny all ingress and egress
 
 ```sh
 
+vi ~/netpol.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -21,5 +23,7 @@ spec:
   policyTypes:
   - Ingress
   - Egress
+
+kubectl apply -f ~/netpol.yaml
 
 ```

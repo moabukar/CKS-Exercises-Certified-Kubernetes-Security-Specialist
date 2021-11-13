@@ -13,7 +13,7 @@ Given a Dockerfile, analyse it and update it based on security best practices.
 
 ```sh
 
-vi /root/Dockerfile
+vi ~/Dockerfile
 
 FROM ubuntu:latest
 
@@ -38,6 +38,7 @@ CMD [ "npm", "start" ]
 
 ```sh
 
+vi ~/Dockerfile
 
 FROM ubuntu:20:04 ## updated image to a specific version
 
