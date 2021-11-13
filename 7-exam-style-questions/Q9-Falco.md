@@ -38,6 +38,6 @@ Copy the rule to /etc/falco/falco_rules.local.yaml
 
 ```sh
 
-Then run ```console systemctl restart falco.service ``` to override the current rule
+Then run systemctl restart falco.service to override the current rule
 
 ```
