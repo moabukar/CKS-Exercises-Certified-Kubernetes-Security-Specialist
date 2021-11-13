@@ -5,15 +5,16 @@
 
 A curated collections of exercises to help prepare for the Certified Kubernetes Security Specialist. The exercises have been segregated into their respective domains as per the [CNCF curriculum](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) for CKS.
 
+## Shortcuts and things to keep in mind when going through this repo
 
-## Shortcuts and things to keep in mind
-
-- k = kubectl ()
-- ns = namespace
-- sa = service account
-- po = pod
-- netpol = network policy
-- psp = pod security policy
+- NS = Namespace
+- SA = Service account
+- Po = Pod
+- NetPol = Network policy
+- PSP = Pod security policy
+- RBAC = Role-based access control
+- k = kubectl
+- SVC = Service
 
 ## [Cluster setup (10%)](1-cluster-setup/)
 
@@ -59,7 +60,6 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 - Performing deep analytical investigation and identification of bad actors within environment — [Sysdig](https://sysdig.com/)
 - Ensuring immutability of containers at runtime
 - Audit logs to monitor access
-
 
 ## [Exam style questions](7-exam-style-questions)
 
