@@ -2,6 +2,6 @@
 
 - [ImagePolicyWebhook](imagepolicywebhook.md)
 
-- [Pod Security Policy](psp.md) - INCOMPLETE
+- [Pod Security Policy](psp.md)
 
 - [Secrets](secrets.md)
