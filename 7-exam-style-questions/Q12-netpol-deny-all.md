@@ -11,6 +11,8 @@ Only allow pods to connect to the pod "nginx-pod":
 - Pods in the namespace "hello" (kubectl get ns --show-labels)
 - Pods with label "app:frontend" in any namespace
 
+### Solution
+
 #### 1 - Apply network policy based on conditions
 
 ```sh

@@ -14,6 +14,8 @@ Question: Enable auditing in this kubernetes cluster. Create a new audit policy 
 - Audit file location: /etc/kubernetes/test-audit.yaml
 - Maximum days to keep the logs: 20
 
+### Solution
+
 #### 1 - Create the audit file
 
 ```sh

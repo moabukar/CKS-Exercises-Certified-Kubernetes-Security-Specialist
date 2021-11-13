@@ -11,6 +11,8 @@ Create the PSP with the following conditions:
 - Allow volumes to mount on pod: secret, configMap
 - seLinux, runAsUser, fsGroup: RunAsAny
 
+### Solution
+
 #### 1 - Enable PSP in kube-api server
 
 ```sh

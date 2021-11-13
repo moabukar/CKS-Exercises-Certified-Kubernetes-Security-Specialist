@@ -7,6 +7,8 @@
 
 Given a Dockerfile, analyse it and update it based on security best practices.
 
+### Solution
+
 #### 1 - Open Dockerfile and fix security issues
 
 ```sh

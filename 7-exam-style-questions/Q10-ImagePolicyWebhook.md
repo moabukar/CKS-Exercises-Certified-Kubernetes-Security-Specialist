@@ -10,6 +10,8 @@ We are required to deploy an ImagePolicyWebhook admission controller to secure t
 - Ensure that the policy is set to implicit deny.
 - Ensure the plugin is on the kube-api server
 
+### Solution
+
 #### 1 - Update and fix the issue on the admission config
 
 ```sh

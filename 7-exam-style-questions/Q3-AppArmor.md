@@ -7,6 +7,8 @@ A pod has been created in the "spectacle" namespace. However, there are a couple
 - Use the AppArmor profile created at /etc/apparmor.d/database.
 - create a service account in the spectacle namespace called "test-sa" and use this service account on the pod
 
+### Solution
+
 #### 1 - Load the AppArmor profile
 
 ```sh

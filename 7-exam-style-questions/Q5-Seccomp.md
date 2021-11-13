@@ -2,6 +2,8 @@
 
 Create a new pod called "nginx-auditing" in the "alpha" namespace using the nginx image. Secure the syscalls that this pod uses by using the local seccomp profile in the pods security context. The auditing.json should be at the /root directory.
 
+### Solution
+
 #### 1 - Copy the seccomp profile to the appropriate directory
 
 ```sh

@@ -7,6 +7,8 @@ pass : P455W0RD
 
 Create a pod named “secretpod” in the namespace "seminar" using the image nginx and mount the secret as a volume with "readOnly" option.
 
+### Solution
+
 #### 1 - Create namespace
 
 ```sh

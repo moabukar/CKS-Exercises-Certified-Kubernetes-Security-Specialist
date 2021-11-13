@@ -6,6 +6,8 @@
 
 Create a network policy named all-deny and it should deny all ingress and egress traffic.
 
+### Solution
+
 #### 1 - Enable PSP in kube-api server
 
 ```sh

@@ -11,6 +11,8 @@ The kube-bench report gives issues such as (or close to):
 
 Make changes to the /var/lib/kubelet/config.yaml
 
+### Solution
+
 #### 1 - Update the kubelet config
 
 ```sh

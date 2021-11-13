@@ -8,6 +8,8 @@ A pod in the "space" namespace has produced an alert that a shell was opened in 
 
 Find the falco rule that produces this alert and change the output to include the "user id", "container id", "container image repo"
 
+### Solution
+
 #### - Create a new falco rule
 
 ```sh
