@@ -15,9 +15,20 @@ A pod has been created in the "spectacle" namespace. However, there are a couple
 ```sh
 
 apparmor_parser -q /etc/apparmor.d/spectacleapp
+
 ```
 
-#### 2 - Create a pod using the AppArmor profile backend
+#### 2 - Create servive account
+
+```sh
+
+kubectl create ns spectacle ## create namespace if not already created
+
+kubectl -n spectacle create sa test-sa
+
+```
+
+#### 3 - Create a pod using the AppArmor profile backend
 
 ```sh
 
@@ -27,16 +38,16 @@ apiVersion: v1
 kind: Pod
 metadata:
   annotations:
-    container.apparmor.security.beta.kubernetes.io/nginx: localhost/spectacleapp #Apply profile 'restricted-fronend' on 'nginx' container
+    container.apparmor.security.beta.kubernetes.io/nginx: localhost/spectacleapp #Apply profile 'spectacleapp' on 'nginx' container
   labels:
     run: nginx
   name: apparmor-pod
   namespace: spectacle
 spec:
-  serviceAccount: test-sa 
+  serviceAccount: test-sa ## use the created service account
   containers:
   - image: nginx:alpine
-    name: nginx
+    name: nginx ## this container name needs to match the annotation "container.apparmor.security.beta.kubernetes.io/nginx"
     volumeMounts:
     - mountPath: /usr/share/nginx/html
       name: test-volume
