@@ -1,4 +1,5 @@
 #### 1 - Create simple pod with nginx image
+
 ```sh
 
 kubectl run pod1 --image=nginx -l=app=nginx
@@ -6,6 +7,7 @@ kubectl run pod1 --image=nginx -l=app=nginx
 ```
 
 #### 2 - Create service
+
 ```sh
 
 kubectl expose pod pod1 --name=svc --port=80
@@ -13,6 +15,7 @@ kubectl expose pod pod1 --name=svc --port=80
 ```
 
 #### 3 - Install nginx controller
+
 ```sh
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.41.2/deploy/static/provider/baremetal/deploy.yaml
@@ -20,6 +23,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 ```
 
 #### 4 - Creating ingress
+
 ```sh
 
 vi ingress1.yaml
@@ -56,6 +60,7 @@ kubectl apply -f ingress1.yaml
 ```
 
 #### 5 - Verify ingress (DOUBLE CHECK THIS PART)
+
 ```sh
 
 kubectl get svc -n ingress-nginx
@@ -77,4 +82,3 @@ vi /etc/hosts
 curl http://ingeress.external:30433
 
 ```
-

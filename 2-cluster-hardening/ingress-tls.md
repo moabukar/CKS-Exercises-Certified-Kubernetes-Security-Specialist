@@ -1,7 +1,6 @@
-
 #### K8s Documentation
 
-https://kubernetes.io/docs/concepts/services-networking/ingress/
+[Ingress K8s docs](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
 #### 1 - Create self signed certificate for domain
 
@@ -9,7 +8,7 @@ https://kubernetes.io/docs/concepts/services-networking/ingress/
 
 mkdir ingress-test
 cd ingress-test
-openssl req -x509 -nodes -days 300 -newkey rsa:2048 -keyout ingress.key -out ingress.crt -subj "/CN=example.internal/O=security"
+openssl req -x509 -nodes -days 300 -newkey rsa:2048 -keyout ingress.key -out ingress.crt -subj "/CN=ingress.external/O=security"
 
 ```
 
@@ -23,7 +22,7 @@ kubectl get secret tls-cert -o yaml
 
 ```
 
-#### 3 - Create Kubernetes Ingress with TLS:
+#### 3 - Create Kubernetes Ingress with TLS
 
 ```sh
 

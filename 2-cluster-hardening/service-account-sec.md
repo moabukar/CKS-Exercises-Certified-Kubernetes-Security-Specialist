@@ -1,8 +1,8 @@
-### K8s Documentation
+### K8s Documentation 
 
-https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
+[Configuring Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
 
-#### Method 1 - Opting out of automounting at Service Account level:
+#### Method 1 - Opting out of automounting at Service Account level
 
 ```sh
 
@@ -51,4 +51,3 @@ spec:
 kubectl apply -f pod-sa.yaml
 
 ```
-

@@ -6,7 +6,7 @@ kubectl get sa
 
 ```
 
-#### When a namespace is created, a service account is created automatically 
+#### When a namespace is created, a service account is created automatically
 
 ```sh
 
