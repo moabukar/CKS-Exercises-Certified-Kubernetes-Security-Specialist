@@ -64,7 +64,7 @@ ctr snapshot mounts ~/nginx-rootfs/ nginx | bash
 
 ```
 
-#### Create the config.
+#### Create the config
 
 ```sh
 

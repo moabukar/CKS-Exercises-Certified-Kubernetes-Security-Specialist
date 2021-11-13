@@ -6,7 +6,7 @@ kubectl create secret generic literalsecret --from-literal=pass=P455W0RD
 
 ```
 
-#### Creating generic secret - using file method 
+#### Creating generic secret - using file method
 
 ```sh
 

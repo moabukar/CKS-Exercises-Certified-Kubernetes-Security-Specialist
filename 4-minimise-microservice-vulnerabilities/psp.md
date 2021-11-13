@@ -1,5 +1,4 @@
-
-#### 1 - Create permissive pod security policy:
+#### 1 - Create permissive pod security policy
 
 ```sh
 
