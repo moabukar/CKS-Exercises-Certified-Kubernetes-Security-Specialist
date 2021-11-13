@@ -65,7 +65,7 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 - Ensuring immutability of containers at runtime
 - Audit logs to monitor access
 
-## [Exam style questions](7-exam-style-questions)
+## [Exam style questions](7-mock-exam-questions)
 
 - We have added some practice questions for you guys here
 - Keep in mind these are not an exact copy of exam questions rather they are guidance for you to follow based on our K8s learning and experiences.
