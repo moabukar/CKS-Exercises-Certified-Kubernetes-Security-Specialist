@@ -1,4 +1,4 @@
-#### Create a pod with ReadOnlyRootFileSystem
+#### Create a pod with ReadOnlyRootFileSystem 
 
 ```sh
 

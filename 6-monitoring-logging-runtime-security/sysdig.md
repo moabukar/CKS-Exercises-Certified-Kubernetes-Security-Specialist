@@ -1,8 +1,8 @@
-#### Documentation
+#### Documentation 
 
-https://github.com/draios/sysdig/wiki/Sysdig-User-Guide
+[Sysdig GitHub](https://github.com/draios/sysdig/wiki/Sysdig-User-Guide)
 
-https://sysdig.com/blog/announcing-sysdig-0-1-98/
+[Sysdig blog (chissels)](https://sysdig.com/blog/announcing-sysdig-0-1-98/)
 
 #### Install sysdig
 
@@ -11,20 +11,21 @@ https://sysdig.com/blog/announcing-sysdig-0-1-98/
 apt install sysdig
 
 ```
+
 #### Commands
 
 ```sh
 
 sysdig
-sysdig proc.name=nano
-sysdig proc.name=cat or proc.name=nano
+sysdig proc.name=vi
+sysdig proc.name=curl or proc.name=vi
 
 ```
 
 ```sh
 
 sysdig -l
-sysdig proc.name=cat and container.name!=host
+sysdig proc.name=curl and container.name!=host
 
 ```
 
