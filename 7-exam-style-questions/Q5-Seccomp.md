@@ -1,6 +1,8 @@
 ### Question - Seccomp
 
-Create a new pod called "nginx-auditing" in the "alpha" namespace using the nginx image. Secure the syscalls that this pod uses by using the local seccomp profile in the pods security context. The auditing.json should be at the /root directory.
+- [Seccomp K8s docs](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
+
+Create a new pod called "nginx-auditing" in the "alpha" namespace using the nginx image. Secure the syscalls that this pod uses by using the local seccomp profile in the pods security context. The auditing.json should be at the "~/" directory.
 
 ### Solution
 
@@ -28,10 +30,10 @@ spec:
   containers:
   - image: nginx
     name: nginx
-  securityContext:
+  securityContext: ## add Security context and apply seccompProfile
     seccompProfile:
-      type: Localhost
-      localhostProfile: profiles/auditing.json
+      type: Localhost 
+      localhostProfile: profiles/auditing.json ## as its localhost, profile location should be here
 
 ```
 
