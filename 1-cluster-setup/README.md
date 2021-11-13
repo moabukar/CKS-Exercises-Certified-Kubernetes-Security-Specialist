@@ -6,10 +6,10 @@
 
 - [Binary Verify](binary-verify.md)
 
-- [creating-ca](creating-ca.md)
+- [Creating-ca](creating-ca.md)
 
-- [installing-etcd](installing-etcd.md)
+- [Installing-etcd](installing-etcd.md)
 
-- [kube-bench](kube-bench.md)
+- [Kube-bench](kube-bench.md)
 
-- [netpol](netpol.md)
+- [Network Policy](netpol.md)
