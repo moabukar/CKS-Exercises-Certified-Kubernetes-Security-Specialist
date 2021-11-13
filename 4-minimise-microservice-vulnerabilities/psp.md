@@ -121,6 +121,8 @@ vi /etc/kubernetes/manifests/kube-apiserver.yaml
 
 ```sh
 
+add below line on the kube-api server
+
 --enable-admission-plugins=PodSecurityPolicy
 
 ```

@@ -1,4 +1,4 @@
-#### Creating generic secret - using literal method
+#### Creating generic secret - using literal method 
 
 ```sh
 
