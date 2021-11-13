@@ -4,7 +4,7 @@
 
 [Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
 
-Create the PSP with the following conditions:
+Create a Pod Security Policy with the following conditions:
 
 - PSP name : pod-psp
 - Not allow privleged pods
@@ -14,6 +14,8 @@ Create the PSP with the following conditions:
 ### Solution
 
 #### 1 - Enable PSP in kube-api server
+
+Edit the /etc/kubernetes/manifests/kube-api-server.yaml file and add the below config.
 
 ```sh
 
@@ -25,7 +27,7 @@ Create the PSP with the following conditions:
 
 ```sh
 
-vi /root/psp.yaml
+vi ~/psp.yaml
 
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
@@ -45,7 +47,7 @@ spec:
   - configMap
   - secret
 
-kubectl apply -f /root/psp.yaml
+kubectl apply -f ~/psp.yaml
 
 ```
 
@@ -53,7 +55,7 @@ kubectl apply -f /root/psp.yaml
 
 ```sh
 
-vi /root/pod.yaml
+vi ~/pod.yaml
 
 apiVersion: v1
 kind: Pod
@@ -73,6 +75,6 @@ spec:
         path: '/data'
         type: Directory
 
-kubectl apply -f /root/pod.yaml
+kubectl apply -f ~/pod.yaml
 
 ```
