@@ -1,8 +1,4 @@
-### Question - Audit
-
-### K8s Docs
-
-[Audit](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
+### Question - Audit 
 
 Question: Enable auditing in this kubernetes cluster. Create a new audit policy file that will only log events based on the details:
 
@@ -16,6 +12,8 @@ Question: Enable auditing in this kubernetes cluster. Create a new audit policy 
 
 ### Solution
 
+- [Audit K8s docs](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
+
 #### 1 - Create the audit file
 
 ```sh
@@ -25,12 +23,12 @@ Create audit file in /etc/kubernetes/test-audit.yaml
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:
-- level: Metadata
-  namespace: ["test"]
-  verb: ["delete","update"]
+- level: Metadata ## level of verbosity
+  namespace: ["test"] ## ensure to use correct namespace
+  verb: ["delete","update"] ## correct operations specified?
   resources:
   - group: ""
-    resource: ["pods"]
+    resource: ["pods"] ## correct resource specified?
 
 ```
 
@@ -38,9 +36,9 @@ rules:
 
 ```sh
 
-- --audit-policy-file=/etc/kubernetes/test-audit.yaml
-- --audit-log-path=/var/log/test-audit.log
-- --audit-log-maxage=20
+- --audit-policy-file=/etc/kubernetes/test-audit.yaml ## ensure correct audit policy file is specified
+- --audit-log-path=/var/log/test-audit.log ## log path
+- --audit-log-maxage=20 ## max days to keep the log
 
 ```
 
@@ -64,6 +62,8 @@ volumeMounts:
   - mountPath: /var/log/test-audit.log
     name: audit-log
     readOnly: false
+
+## ensure correct volumes paths are mounted
 
 
 - After exiting the kube-api server manifest, give it a moment for the server to restart and for changes to take effect.

@@ -8,6 +8,8 @@ Create a new rolebinding name "k8s-seminar-bind" binding to the newly created ro
 
 ### Solution
 
+- [RBAC K8s docs](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
+
 #### 1 - Create a namespace
 
 ```sh

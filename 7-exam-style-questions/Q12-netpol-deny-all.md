@@ -1,23 +1,21 @@
 ## Question - Network Policy
 
-### K8s Docs
-
-[Network Policy](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
-
 Create a network policy called "np-restriction" to the pod "nginx-pod" in the namespace "moon"
 
 Only allow pods to connect to the pod "nginx-pod":
 
 - Pods in the namespace "hello" (kubectl get ns --show-labels)
-- Pods with label "app:frontend" in any namespace
+- Pods with label "app:backend" in any namespace
 
 ### Solution
+
+- [Network Policy K8s docs](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
 #### 1 - Apply network policy based on conditions
 
 ```sh
 
-kubectl get ns hello --show-labels >>> Namespace hello has label "ns: test"
+kubectl get ns hello --show-labels ## Namespace hello has label "ns: test"
 
 vi ~/netpol.yaml
 
@@ -36,10 +34,10 @@ spec:
   - from:
     - namespaceSelector:
         matchLabels:
-          ns: test
+          ns: test ## use the label that the namespace uses
     - podSelector:
         matchLabels:
-          app: frontend
+          app: backend ## use the same label as specified on the 2nd spec
     ports:
     - protocol: TCP
       port: 6379

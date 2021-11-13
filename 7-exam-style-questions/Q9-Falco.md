@@ -1,14 +1,12 @@
-### Question - Falco
-
-### K8s Docs
-
-[Falco](https://falco.org/docs/)
+### Question - Falco 
 
 A pod in the "space" namespace has produced an alert that a shell was opened in the container of this pod.
 
 Find the falco rule that produces this alert and change the output to include the "user id", "container id", "container image repo"
 
 ### Solution
+
+- [Falco](https://falco.org/docs/)
 
 #### - Create a new falco rule
 
