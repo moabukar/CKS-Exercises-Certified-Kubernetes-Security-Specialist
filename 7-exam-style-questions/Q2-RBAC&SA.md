@@ -17,6 +17,7 @@ kubectl create ns seminar
 ```
 
 #### 2 - Create service account
+
 ```sh
 
 kubectl -n seminar create sa seminar-sa
@@ -24,12 +25,17 @@ kubectl -n seminar create sa seminar-sa
 ```
 
 #### 3 - Create role
+
 ```sh
+
 kubectl -n seminar create role k8s-seminar --verb=create,update --resource=pods,deployments
+
 ```
 
 #### 4 - Create rolebinding
+
 ```sh
+
 kubectl -n seminar create rolebinding k8s-seminar-bind --role=k8s-seminar --serviceaccount=seminar:seminar-sa
 
 ```
