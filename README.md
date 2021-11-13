@@ -3,6 +3,10 @@
 
 # CKS-Exercises
 
+<p align="center">
+  <img width="360" src="cks-logo.png">
+</p>
+
 A curated collections of exercises to help prepare for the Certified Kubernetes Security Specialist. The exercises have been segregated into their respective domains as per the [CNCF curriculum](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) for CKS.
 
 ## Shortcuts and things to keep in mind when going through this repo
