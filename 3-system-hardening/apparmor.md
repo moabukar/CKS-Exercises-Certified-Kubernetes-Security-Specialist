@@ -1,4 +1,4 @@
-#### Creating a sample apparmor profile:
+#### Creating a sample apparmor profile
 
 ```sh
 
@@ -25,7 +25,7 @@ aa-status
 
 ```
 
-#### Sample YAML File based on Host PID:
+#### Sample YAML File based on Host PID
 
 ```sh
 
