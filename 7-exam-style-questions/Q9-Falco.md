@@ -8,15 +8,17 @@ A pod in the "space" namespace has produced an alert that a shell was opened in 
 
 Find the falco rule that produces this alert and change the output to include the "user id", "container id", "container image repo"
 
-#### 1 - Setup falco rule
+#### - Create a new falco rule
 
 ```sh
 
-- Go to /etc/falco/falco_rules.yaml
-- Then search for "shell in a container"
+- Navigate to /etc/falco/falco_rules.yaml
+- Find the rule titled "shell in a container"
 
-Copy the rule from there to /etc/falco/falco_rules.local.yaml
+Copy the rule to /etc/falco/falco_rules.local.yaml
 
+```
+```sh
 - rule: Terminal shell in container
   desc: A shell was used as the entrypoint/exec point into a container with an attached terminal.
   condition: >
@@ -28,9 +30,11 @@ Copy the rule from there to /etc/falco/falco_rules.local.yaml
     %evt.time.s,%user.uid,%container.id,%container.image.repository
   priority: ALERT
   tags: [container, shell, mitre_execution]
+```
 
+```sh
 Once you've applied it, apply:
 
-systemctl restart falco.service to over ride the current rule
+systemctl restart falco.service to override the current rule
 
 ```
