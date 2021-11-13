@@ -1,7 +1,9 @@
-## Questions for Chapter 5 - Minimise microservices vulnerabilities
+## Questions for Chapter 5 - Supply chain security
 
-- [ImagePolicyWebhook](imagepolicywebhook.md)
+- [Kube-bench](kube-bench.md)
 
-- [Pod Security Policy](psp.md) - INCOMPLETE
+- [Static analysis - Checkov](static-analysis-checkov.md)
 
-- [Secrets](secrets.md)
+- [Static analysis - Kubesec](static-analysis-kubesec.md)
+
+- [Trivy](trivy.md)
