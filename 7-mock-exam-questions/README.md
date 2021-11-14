@@ -24,7 +24,7 @@
 
 - [Q11 - Pod Security Policy](Q11-PSP.md)
 
-- [Q12 - Network Policy (Deny)](Q12-netpold-deny-all.md)
+- [Q12 - Network Policy (Deny)](Q12-netpol-deny-all.md)
 
 - [Q13 - Network Policy (Restrict pod)](Q13-netpol-restrict.md)
 
