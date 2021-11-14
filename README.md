@@ -9,6 +9,14 @@
 
 A curated collections of exercises to help prepare for the Certified Kubernetes Security Specialist. The exercises have been segregated into their respective domains as per the [CNCF curriculum](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) for CKS.
 
+## Contributing
+
+### Pull Request process
+  - Fork the repo and create your branch from your forked repo
+  - Please try to stick to the layout we follow in terms of the README markdown
+  - Issue that PR
+  - This will be reviewed by the team and merged
+
 ## Shortcuts and things to keep in mind when going through this repo
 
 - NS = Namespace
