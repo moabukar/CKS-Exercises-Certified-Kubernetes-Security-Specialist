@@ -1,4 +1,4 @@
-#### Create a directory for storing the audit logs and audit policy 
+#### 1 - Create a directory for storing the audit logs and audit policy 
 
 ```sh
 
@@ -30,7 +30,7 @@ mkdir audit
 
 ```
 
-#### Audit policy
+#### 4 - Audit policy
 
 ```sh
 
