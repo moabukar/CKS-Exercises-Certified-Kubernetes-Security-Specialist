@@ -22,7 +22,7 @@ sudo apt install ./kube-bench_0.6.5_linux_amd64.deb -f
 
 ```sh
 
-run below command to view security benchmakrs (failed & passed configs)
+run below command to view security benchmarks (failed & passed configs)
 
 kube-bench master
 
