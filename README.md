@@ -33,6 +33,19 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 - k = kubectl
 - SVC = Service
 
+## Exam Brief 
+
+Offical exam objectives
+
+* [CNCF CKS Exam Curriculum repository ](https://github.com/cncf/curriculum/)
+
+- Duration : 2 hours
+- No. of Qs: 15-20 hands-on performance based tasks
+- Certificate validity: 2 years
+- Passing score: 67%
+- Prerequisite: Valid CKA
+- Cost: $375 USD, One (1) year exam eligibility, with a free retake within the year.
+
 ## [Cluster setup (10%)](1-cluster-setup/)
 
 - Using network policies to restrict cluster level access
