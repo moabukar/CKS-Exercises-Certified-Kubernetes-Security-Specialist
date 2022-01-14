@@ -19,6 +19,8 @@ A curated collection of exercises to help prepare for the Certified Kubernetes S
 - [Supply Chain Security (20%)](5-supply-chain-security/)
 - [Monitoring, Logging and Runtime security (20%)](6-monitoring-logging-runtime-security/)
 
+#### [For a more detailed syllabus](./syllabus/README.md)
+
 #### [Exam style questions](7-mock-exam-questions)
 #### [Are you preparing for the CKA/CKAD?](8-preparing-for-CKA-CKAD?)
 
