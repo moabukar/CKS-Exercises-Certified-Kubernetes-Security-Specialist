@@ -9,13 +9,13 @@
 
 A curated collections of exercises to help prepare for the Certified Kubernetes Security Specialist. The exercises have been segregated into their respective domains as per the [CNCF curriculum](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) for CKS.
 
+* [CNCF CKS Exam Curriculum repository ](https://github.com/cncf/curriculum/)
 ### Note: 
 
 - This repo is not meant to be an exam dump or a simulated exam. It is meant to be used as a guide for the type of exercises associated with each domain of the exam. We also provide exam like questions which give you an insight into what type of questions you will be asked and how you'll be able to solve such a question.
 
-## Contributing
+### Want to Contribute?
 
-### Pull Request process
   - Fork the repo and create your branch from your forked repo
   - Please try to stick to the layout we follow in terms of the README markdown
   - Issue that PR
@@ -23,8 +23,6 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 
 
 # Exam syllabus
-
-* [CNCF CKS Exam Curriculum repository ](https://github.com/cncf/curriculum/)
 
 - [Cluster setup (10%)](1-cluster-setup/)
 - [Cluster Hardening (15%)](2-cluster-hardening/)
