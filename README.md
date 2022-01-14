@@ -22,23 +22,23 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
   - This will be reviewed by the team and merged
 
 
-Offical exam objectives
+# Exam syllabus
 
 * [CNCF CKS Exam Curriculum repository ](https://github.com/cncf/curriculum/)
 
-## [Cluster setup (10%)](1-cluster-setup/)
-## [Cluster Hardening (15%)](2-cluster-hardening/)
-## [System Hardening (15%)](3-system-hardening/)
-## [Minimise Microservice Vulnerabilities (20%)](4-minimise-microservice-vulnerabilities/)
-## [Supply Chain Security (20%)](5-supply-chain-security/)
-## [Monitoring, Logging and Runtime security (20%)](6-monitoring-logging-runtime-security/)
+- [Cluster setup (10%)](1-cluster-setup/)
+- [Cluster Hardening (15%)](2-cluster-hardening/)
+- [System Hardening (15%)](3-system-hardening/)
+- [Minimise Microservice Vulnerabilities (20%)](4-minimise-microservice-vulnerabilities/)
+- [Supply Chain Security (20%)](5-supply-chain-security/)
+- [Monitoring, Logging and Runtime security (20%)](6-monitoring-logging-runtime-security/)
 
-## [Exam style questions](7-mock-exam-questions)
+#### [Exam style questions](7-mock-exam-questions)
 
 - We have added some practice questions for you guys here
 - Keep in mind these are not an exact copy of exam questions rather they are guidance for you to follow based on our K8s learning and experiences.
 
-## [Are you preparing for the CKA/CKAD?](8-preparing-for-CKA-CKAD?)
+#### [Are you preparing for the CKA/CKAD?](8-preparing-for-CKA-CKAD?)
 
 - Here are a list of online resources to help you pass the CKA/CKAD exams so that you can go for the CKS (as the CKA is a prerequisite for the CKS)
 - Feel free to make a PR in the folder if you find useful resources.
