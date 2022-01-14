@@ -1,3 +1,30 @@
+## Exam Brief 
+
+- Duration : 2 hours
+- No. of Qs: 15-20 hands-on performance based tasks
+- Certificate validity: 2 years
+- Passing score: 67%
+- Prerequisite: Valid CKA
+- Cost: $375 USD, One (1) year exam eligibility, with a free retake within the year.
+
+
+
+### Note: 
+
+- This repo is not meant to be an exam dump or a simulated exam. It is meant to be used as a guide for the type of exercises associated with each domain of the exam. We also provide exam like questions which give you an insight into what type of questions you will be asked and how you'll be able to solve such a question.
+
+## Shortcuts and things to keep in mind when going through this repo
+
+
+- NS = Namespace
+- SA = Service account
+- Po = Pod
+- NetPol = Network policy
+- PSP = Pod security policy
+- RBAC = Role-based access control
+- k = kubectl
+- SVC = Service
+
 ## [Cluster setup (10%)](../1-cluster-setup/)
 
 - Using network policies to restrict cluster level access
