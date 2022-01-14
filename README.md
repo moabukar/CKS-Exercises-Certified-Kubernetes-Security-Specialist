@@ -10,18 +10,6 @@
 A curated collections of exercises to help prepare for the Certified Kubernetes Security Specialist. The exercises have been segregated into their respective domains as per the [CNCF curriculum](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) for CKS.
 
 * [CNCF CKS Exam Curriculum repository ](https://github.com/cncf/curriculum/)
-### Note: 
-
-- This repo is not meant to be an exam dump or a simulated exam. It is meant to be used as a guide for the type of exercises associated with each domain of the exam. We also provide exam like questions which give you an insight into what type of questions you will be asked and how you'll be able to solve such a question.
-
-### Want to Contribute?
-
-  - Fork the repo and create your branch from your forked repo
-  - Please try to stick to the layout we follow in terms of the README markdown
-  - Issue that PR
-  - This will be reviewed by the team and merged
-
-
 # Exam syllabus
 
 - [Cluster setup (10%)](1-cluster-setup/)
@@ -32,10 +20,6 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 - [Monitoring, Logging and Runtime security (20%)](6-monitoring-logging-runtime-security/)
 
 #### [Exam style questions](7-mock-exam-questions)
-
-- We have added some practice questions for you guys here
-- Keep in mind these are not an exact copy of exam questions rather they are guidance for you to follow based on our K8s learning and experiences.
-
 #### [Are you preparing for the CKA/CKAD?](8-preparing-for-CKA-CKAD?)
 
 - Here are a list of online resources to help you pass the CKA/CKAD exams so that you can go for the CKS (as the CKA is a prerequisite for the CKS)
@@ -62,3 +46,10 @@ A curated collections of exercises to help prepare for the Certified Kubernetes 
 1. [Abdennour's CKS repo](https://github.com/abdennour/certified-kubernetes-security-specialist)
 1. [A simple and comorehensive CLI to prepare for the CKS exam by Abdennour](https://cks.kubernetes.tn/getting-started/installation/) 
 1. [Kim's CKS Challenge series](https://github.com/killer-sh/cks-challenge-series)
+
+### Want to Contribute?
+
+  - Fork the repo and create your branch from your forked repo
+  - Please try to stick to the layout we follow in terms of the README markdown
+  - Issue that PR
+  - This will be reviewed by the team and merged
