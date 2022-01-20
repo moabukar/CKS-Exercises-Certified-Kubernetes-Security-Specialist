@@ -7,7 +7,8 @@
   <img width="120" src="Cks-logo.png">
 </p>
 
-A curated collection of exercises to help prepare for the Certified Kubernetes Security Specialist. The exercises have been segregated into their respective domains as per the [CNCF curriculum](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) for CKS.
+A curated collection of exercises to help prepare for the Certified Kubernetes Security Specialist. The exercises have been segregated into their respective domains as per the [CNCF curriculum](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) for CKS. 
+- Note: Regardless of you sitting the CKS exam or not, once you have completed most of the exercises, you will have a good understanding and implementation of security in the large Kubernetes eco-system. What matters is that you enjoy the learning process. Goodluck on your learning journey!
 
 * [CNCF CKS Exam Curriculum repository ](https://github.com/cncf/curriculum/)
 # Exam syllabus
