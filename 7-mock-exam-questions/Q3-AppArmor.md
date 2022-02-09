@@ -8,6 +8,9 @@ A pod has been created in the "spectacle" namespace. However, there are a couple
 - Use the AppArmor profile created at /etc/apparmor.d/spectacleapp
 - create a service account in the spectacle namespace called "test-sa" and use this service account on the pod
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 - [AppArmor K8s docs](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
@@ -62,3 +65,4 @@ spec:
 kubectl apply -f ~/app-armor-pod.yaml
 
 ```
+</details>

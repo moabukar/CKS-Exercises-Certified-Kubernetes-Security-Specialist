@@ -6,6 +6,9 @@ We are required to deploy an ImagePolicyWebhook admission controller to secure t
 - Ensure that the policy is set to implicit deny.
 - Ensure the plugin is on the kube-api server
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 - [Kube-Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
@@ -38,3 +41,4 @@ plugins:
 Once you leave the vim editor and save, the API server will automatically restart and pick up the configuration.
 
 ```
+</details>

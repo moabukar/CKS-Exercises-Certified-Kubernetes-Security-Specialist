@@ -2,6 +2,9 @@
 
 Given a Dockerfile, analyse it and update it based on security best practices.
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 #### Docker and container security docs (can't be used in exam)
@@ -57,3 +60,4 @@ COPY src /code/src
 CMD [ "npm", "start" ]
 
 ```
+</details>

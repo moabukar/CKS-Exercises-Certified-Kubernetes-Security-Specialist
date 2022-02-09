@@ -4,6 +4,9 @@ Create a RuntimeClass named "gVisor" using the handler "runsc"
 
 Create a pod named "gVisor-pod" that uses the nginx image in the namespace "test" which utilises the runtime class "gVisor"
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 - [RuntimeClass K8s docs](https://kubernetes.io/docs/concepts/containers/runtime-class/)
@@ -70,3 +73,4 @@ kubectl exec -it gVisor-pod -- bash dmesg
 kubectl exec -it nginx-test --bash dmesg
 
 ```
+</details>

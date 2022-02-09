@@ -2,6 +2,9 @@
 
 Create a network policy named all-deny and it should deny all ingress and egress traffic.
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 - [Network Policy K8s docs](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
@@ -25,3 +28,4 @@ spec:
 kubectl apply -f ~/netpol.yaml
 
 ```
+</details>

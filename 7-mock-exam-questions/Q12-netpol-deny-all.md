@@ -7,6 +7,9 @@ Only allow pods to connect to the pod "nginx-pod":
 - Pods in the namespace "hello" (kubectl get ns --show-labels)
 - Pods with label "app:backend" in any namespace
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 - [Network Policy K8s docs](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
@@ -45,3 +48,4 @@ spec:
 kubectl apply -f ~/netpol.yaml
 
 ```
+</details>
