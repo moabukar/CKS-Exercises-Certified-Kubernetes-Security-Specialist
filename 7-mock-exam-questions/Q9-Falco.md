@@ -4,6 +4,9 @@ A pod in the "space" namespace has produced an alert that a shell was opened in 
 
 Find the falco rule that produces this alert and change the output to include the "user id", "container id", "container image repo"
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 - [Falco](https://falco.org/docs/)
@@ -41,3 +44,4 @@ Copy the rule to /etc/falco/falco_rules.local.yaml
 Then run systemctl restart falco.service to override the current rule
 
 ```
+</details>

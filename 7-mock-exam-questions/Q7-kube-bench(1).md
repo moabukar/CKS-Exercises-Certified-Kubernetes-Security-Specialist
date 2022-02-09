@@ -9,6 +9,9 @@ The kube-bench report gives issues such as (or close to):
 
 Make changes to the /var/lib/kubelet/config.yaml
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 - [Kube-bench GitHub](https://github.com/aquasecurity/kube-bench)
@@ -37,3 +40,4 @@ protectKernelDefaults: true
 now you may exit the kubelet with :wq! and do "systemctl kubelet restart"
 
 ```
+</details>

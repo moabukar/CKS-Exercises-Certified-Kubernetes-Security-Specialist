@@ -10,6 +10,9 @@ Question: Enable auditing in this kubernetes cluster. Create a new audit policy 
 - Audit file location: /etc/kubernetes/test-audit.yaml
 - Maximum days to keep the logs: 20
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 - [Audit K8s docs](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
@@ -69,3 +72,4 @@ volumeMounts:
 - After exiting the kube-api server manifest, give it a moment for the server to restart and for changes to take effect.
 
 ```
+</details>

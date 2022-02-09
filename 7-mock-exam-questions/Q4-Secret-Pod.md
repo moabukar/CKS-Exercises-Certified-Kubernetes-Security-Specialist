@@ -7,6 +7,9 @@ pass : P455W0RD
 
 Create a pod named “secretpod” in the namespace "seminar" using the image nginx and mount the secret as a volume with "readOnly" option.
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 - [Secret K8s docs](https://kubernetes.io/docs/concepts/configuration/secret/)
@@ -54,3 +57,4 @@ spec:
 kubectl apply -f ~/secret-pod.yaml
 
 ```
+</details>

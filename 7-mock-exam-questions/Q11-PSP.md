@@ -7,6 +7,9 @@ Create a Pod Security Policy with the following conditions:
 - Allow volumes to mount on pod: secret, configMap
 - seLinux, runAsUser, fsGroup: RunAsAny
 
+<details close>
+<summary> Solution</summary>
+<br>
 ### Solution
 
 - [PSP K8s docs](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
@@ -76,3 +79,4 @@ spec:
 kubectl apply -f ~/pod.yaml
 
 ```
+</details>
