@@ -2,6 +2,11 @@
 
 There are a number of pods running in the "spectacle" namespace. Identify and delete the pods which have CRITICAL vulnerabilities.
 
+
+<details close>
+<summary> Solution</summary>
+<br>
+
 ### Solution
 
 - [Trivy docs](https://github.com/aquasecurity/trivy)
@@ -33,3 +38,8 @@ kubectl -n spectacle delete pod <PODNAME>
 ```
 
 Do the above procedure as many times as required to delete all pods with CRITICAL vulnerabilities.  
+
+
+</details>
+
+
