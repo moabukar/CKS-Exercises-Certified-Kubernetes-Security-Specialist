@@ -49,7 +49,7 @@ metadata:
   name: apparmor-pod
   namespace: spectacle
 spec:
-  serviceAccount: test-sa ## use the created service account
+  serviceAccountName: test-sa ## use the created service account
   containers:
   - image: nginx:alpine
     name: nginx ## this container name needs to match the annotation "container.apparmor.security.beta.kubernetes.io/nginx"
