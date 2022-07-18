@@ -47,8 +47,7 @@ FROM ubuntu:20:04 ## updated image to a specific version
 
 ENV CI=true
 
-RUN apt get update
-RUN apt get install -y wget curl ## lighter image due to docker caching
+RUN apt-get update && apt-get install -y wget curl ## lighter image due to docker caching, prevents outdated version of installed packages
 
 USER user ## no privileged user being used
 
