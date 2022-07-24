@@ -17,7 +17,27 @@ cp ~/auditing.json /var/lib/kubelet/seccomp/profiles
 
 ```
 
-#### 2 - Create the pod using the seccomp profile
+#### 2 - Change the seccomp profile by adding the below argument in the kubelet config file
+
+```sh
+Add 'seccompDefault: true' to /var/lib/kubelet/config.yaml
+
+streamingConnectionIdleTimeout: 0s
+syncFrequency: 0s
+volumeStatsAggPeriod: 0s
+seccompDefault: true
+
+```
+
+#### 3 - Restart Kubelet:
+
+```sh
+
+sudo systemctl restart kubelet
+
+```
+
+#### 4 - Create the pod using the seccomp profile
 
 ```sh
 
@@ -40,7 +60,7 @@ spec:
 
 ```
 
-#### 3 - Apply the pod
+#### 5 - Apply the pod
 
 ```sh
 
