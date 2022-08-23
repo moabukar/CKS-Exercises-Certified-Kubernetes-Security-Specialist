@@ -41,6 +41,7 @@ spec:
     - podSelector:
         matchLabels:
           app: backend ## use the same label as specified on the 2nd spec
+      namespaceSelector: {}
     ports:
     - protocol: TCP
       port: 6379
